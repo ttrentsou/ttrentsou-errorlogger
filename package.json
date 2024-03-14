@@ -18,6 +18,7 @@
   "author": "ttrentsou",
   "license": "MIT",
   "dependencies": {
+    "ttrentsou-data-visualization-package": "^1.0.1",
     "ttrentsou-task-queue": "^1.0.0"
   }
 }
