@@ -1,40 +1,40 @@
 ````markdown
-# Error Logging and Monitoring Package
+# Error Logger Package
 
-Error Logging and Monitoring Package is a simple Node.js package that provides functionality to track and monitor errors in a Node.js application.
+Error Logger Package is a simple Node.js package that provides functionality to log errors, optionally sending them to an external error tracking service.
 
 ## Installation
 
 You can install the package via npm:
 
 ```bash
-npm install error-logging-package
+npm install error-logger-package
 ```
 
 ## Usage
 
 ```javascript
-const ErrorLogger = require('error-logging-package');
+const ErrorLogger = require('error-logger-package');
 
-// Create an instance of ErrorLogger
-const errorLogger = new ErrorLogger();
+// Create an instance of ErrorLogger with optional external error tracking service
+const errorLogger = new ErrorLogger(externalService);
 
-// Simulate an error
+// Log an error
 const error = new Error('An example error occurred');
-
-// Log the error using the ErrorLogger
 errorLogger.logError(error);
 ```
 
 ## API
 
-### `ErrorLogger`
+### `ErrorLogger(externalService)`
 
 The `ErrorLogger` class provides functionality to log errors.
 
+- `externalService` (optional): An instance of an external error tracking service to which errors can be sent.
+
 #### `logError(error)`
 
-Logs the specified error.
+Logs the specified error, optionally sending it to the external error tracking service if provided.
 
 - `error` (Error): The error object to be logged.
 
