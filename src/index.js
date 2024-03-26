@@ -1,16 +1,25 @@
 // errorLogger.js
 
 class ErrorLogger {
-    constructor() {
-      // You can customize this to use any external error tracking service
-      // For simplicity, we'll just log errors to the console in this example
-    }
-  
-    logError(error) {
-      console.error('Error:', error);
-      // You can add additional logic here to send the error to an external service
+  constructor(externalService) {
+    // Initialize with the external error tracking service
+    this.externalService = externalService;
+  }
+
+  logError(error) {
+    console.error('Error:', error);
+    
+    // Check if external service is provided and log error to it
+    if (this.externalService) {
+      this.sendErrorToExternalService(error);
     }
   }
-  
-  module.exports = ErrorLogger;
-  
+
+  sendErrorToExternalService(error) {
+    // Simulate sending error to external service
+    console.log('Sending error to external service:', error);
+    // You can implement logic here to actually send the error to the external service
+  }
+}
+
+module.exports = ErrorLogger;
