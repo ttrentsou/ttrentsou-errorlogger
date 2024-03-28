@@ -1,6 +1,6 @@
 {
   "name": "ttrentsou-errorlogger",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Develop a package that helps developers track and monitor errors in their Node.js applications. This could include integrations with error tracking services like Sentry or Rollbar, as well as custom error logging and reporting functionalities.",
   "main": "./src/index.js",
   "scripts": {
