@@ -20,6 +20,7 @@
   "dependencies": {
     "ttrentsou-data-visualization-package": "^1.0.1",
     "ttrentsou-job-scheduling": "^1.0.1",
+    "ttrentsou-localization-package": "^1.0.1",
     "ttrentsou-task-queue": "^1.0.0"
   }
 }
